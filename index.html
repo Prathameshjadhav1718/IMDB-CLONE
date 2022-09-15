@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB CLONE</title>
+
+    <!-- font-Awesome link -->
+    <script src="https://kit.fontawesome.com/b4b610d079.js" crossorigin="anonymous"></script>
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="main">
+        <!-- logo, search bar, and buttons -->
+        <div id="header">
+            <div>
+                <div id="logo">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+            </div>
+            
+            <div id="search-bar">
+                <div class="wrapper">
+                    <div id="search-area">
+                        <input aria-label="" type="text" name="searchMovie" id="searchMovie" placeholder="Search..." autocomplete="off">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                    
+                    <div class="results">
+                        <ul>
+                            <li>test</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="extra-buttons">
+                 <!-- Years in drop down using js -->
+                <select id="best-of-year">
+                </select>
+                <button id="my-list">
+                    <a href="./Favourites.html">Favourites</a>
+                </button>
+            </div>
+        </div>
+
+        <div id="page-heading">
+             </div>
+
+
+
+        <div id="movie-container">
+            <!-- Movie element -->
+            <div class="movie-element">
+               <div class="movie-title">Spider Man: No Way Home</div>
+                <div class="movie-element-tags">
+                    <div class="movie-rating">
+                        8.2 <i class="fas fa-star"></i>
+                    </div>
+                    <div class="add-movie-to-list">
+                        <i class="fa-solid fa-bookmark" onclick=""></i>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div id="toasts">
+            <div class="toast">Added To Favourites</div>
+        </div>
+
+
+        <!-- Page Navigation-->
+        <div class="page-navigation">
+            
+            <button id="prev-page"> Previous Page </button>
+            <button id="next-page"> Next Page </button>
+
+        </div>
+
+    </div>
+
+    <!-- Javascript Linking-->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
